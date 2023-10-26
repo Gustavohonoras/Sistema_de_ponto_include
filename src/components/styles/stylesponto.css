@@ -1,0 +1,332 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+}
+
+body {
+   width: 100%;
+   background: #212529;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    height: auto;
+    padding: 12px 0;
+    background: #191C1F;
+}
+header h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 0 50px;
+  
+    /* 48px */
+
+}
+header .container-img {
+    padding: 0 50px;
+}
+
+header #logo-include{
+    width: 250px;
+    
+}
+main {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+#day, #date, #time {
+    cursor: pointer;
+}
+
+.text {
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    color: #ADB5BD;
+}
+
+#div-day-date {
+    display: flex;
+    margin-top: 40px;
+}
+
+#div-day-date .text {
+    font-size: 15px;
+}
+
+#time {
+    margin-bottom: 40px;
+}
+
+#first-button {
+    width: 300px;
+    height: 90px;
+    padding: 20px 32px;
+    border: 1px solid var(--gray-2, #212529);
+    background: #00CD2D;
+
+    color: var(--gray-7, #F8F9FA);
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    transition: transform 0.3s ease;
+
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#first-button:hover {
+    transform: scale(1.05);
+}
+
+#registerButton {
+    width: 300px;
+    height: 90px;
+    padding: 20px 32px;
+    border: 1px solid var(--gray-2, #212529);
+    background: #FF1313;
+
+    color: var(--gray-7, #F8F9FA);
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    transition: transform 0.3s ease;
+
+    margin-right: 10px;
+
+    cursor: pointer;
+}
+
+#registerButton:hover {
+    transform: scale(1.05);
+}
+
+.box-timer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#seccond-box p {
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    /* 18px */
+    color: #EDF2FF;
+    color: var(--gray-6, #EDF2FF);
+}
+
+#seccond-box .time {
+    font-size: 24px;
+    color: var(--gray-4, #ADB5BD);
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    /* 48px */
+}
+
+.container {
+    margin-left: 100px;
+}
+
+/* Código dá caixa maior para abrigar main, aside e footer */
+.caixa {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+   
+}
+.caixa .complete{
+    width: 320px;
+}
+
+aside {
+    display: flex;
+    width: 300px;
+    height: 100%;
+    background: #191C1F;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3rem;
+    
+}
+
+aside h1 {
+    background: #191C1F;
+    color: white;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: .5rem;
+   
+}
+
+aside div {
+    width: 100%;
+}
+
+.paragraph {
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+    color: #FFF;
+    /* text-align: center; */
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-left: 10px;
+}
+
+.table-item {
+    color: #FFF;
+    /* text-align: center; */
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-left: 40px;
+
+
+}
+
+.table-container {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, border 0.5s;;
+    cursor: pointer;
+    border: 2px solid transparent;
+    background-color: rgb(33 37 41);
+}
+
+.table-container:hover{
+    transform: scale(1.03);
+    border: 1px solid white;
+}
+footer {
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    background: var(--gray-1, #191C1F);
+
+}
+
+.text-footer {
+    width: 80vw;
+    color: var(--gray-5, #CED4DA);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    background: var(--gray-1, #191C1F);
+
+}
+
+.title-footer {
+    color: var(--gray-5, #CED4DA);
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    background: var(--gray-1, #191C1F);
+}
+
+.after-footer {
+    background: var(--brand-2, #FF6C13);
+    height: 70px;
+}
+
+/* responsividade */
+@media (max-width:800px) {
+    .caixa{
+        flex-direction: column;
+        align-items: center;
+    }
+    .caixa .complete{
+        display: none;
+    }
+    header{
+        flex-direction: column;
+        padding: 24px 0;
+    }
+    header .container-img{
+        padding: 0;
+    }
+    header img{
+        padding: 0;
+    }
+    header h1{
+        padding: 0 12px;
+    }
+    aside{
+        margin: 0;
+    }
+    .container{
+        margin: 0;
+    }
+    .container .box-timer{
+        flex-direction: column;
+    }
+    #first-button{
+        margin: 0;
+    }
+    #registerButton{
+        margin: 0;
+    }
+    .box-timer{
+        align-items: start;
+    }
+}
+@media (max-width:340px){
+    #first-button{
+     width: 200px;
+     margin: 0 auto;
+     height: auto;
+        font-size: 15px;
+   
+    }
+    #registerButton{
+    width: 200px;
+    margin: 0 auto;
+    height: auto;
+    font-size: 15px;
+      
+    }
+    header #logo-include{
+        width: 70vw;
+    }
+    aside{
+        width: auto;
+    }
+}
