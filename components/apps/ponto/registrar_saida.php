@@ -33,8 +33,6 @@
             $tipo_registro = "entrada";
             $text_tipo_registro = "entrada";
         }
-    }else{
-        echo "nenhum ponto encontrado";
     }
     
     switch($tipo_registro){

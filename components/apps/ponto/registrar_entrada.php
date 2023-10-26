@@ -33,12 +33,10 @@
             $tipo_registro = "entrada";
             $text_tipo_registro = "entrada";
         }
-    }else{
-        echo "nenhum ponto encontrado";
     }
 
     switch($tipo_registro){
-        default:
+        case "entrada":
             $query_horario = "INSERT INTO pontos (data_entrada, entrada, user_id) VALUES (:data_entrada, :entrada, :user_id)";
             $cad_horario = $conn->prepare($query_horario);
             $cad_horario->bindParam(":data_entrada", $data_entrada);
@@ -46,10 +44,8 @@
             $cad_horario->bindParam(":user_id", $id_user);
 
             break;
-        }
-        
-
-
+    }
+    
     $cad_horario->execute();
     if($cad_horario->rowCount()){
         echo "<p style='color: green;>Horario de $text_tipo_registro cadastrado com sucesso!<p>";
