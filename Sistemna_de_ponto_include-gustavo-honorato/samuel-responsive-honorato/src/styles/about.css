@@ -1,0 +1,36 @@
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--gray-1, #191C1F);
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+   
+    padding: 50px;
+    justify-content: center;
+}
+
+.about__title {
+   
+    color: var(--gray-6, #EDF2FF);
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    
+}
+
+.about__text {
+    color: var(--gray-5, #CED4DA);
+    text-align: justify;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}

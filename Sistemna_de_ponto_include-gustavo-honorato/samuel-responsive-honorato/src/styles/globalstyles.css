@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@300;400;500;700&family=Ubuntu:ital,wght@0,500;1,700&display=swap');
+
+:root{
+    --brand-1: #FF4B13;
+    --brand-2: #FF6C13;
+    --brand-3: #00CD2D;
+    --brand-4: #FF1313;
+    --gray-1: #191C1F;
+    --gray-2: #212529;
+    --gray-3: #343A40;
+    --gray-4: #ADB5BD;
+    --gray-5: #CED4DA;
+    --gray-6: #EDF2FF;
+    --gray-7: #F8F9FA;
+
+}
