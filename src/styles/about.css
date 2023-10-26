@@ -1,0 +1,38 @@
+.about{
+
+   justify-content: center;
+    display: flex;
+    background: var(--gray-1, #191C1F);
+}
+
+.about__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 113px;
+    padding: 46px 0px;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.about__title {
+    width: 1576px;
+    color: var(--gray-6, #EDF2FF);
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    text-align: left;
+}
+
+.about__text {
+    width: 1576px;
+    color: var(--gray-5, #CED4DA);
+    text-align: justify;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
