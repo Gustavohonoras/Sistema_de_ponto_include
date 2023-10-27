@@ -3,7 +3,6 @@
 
     date_default_timezone_set('America/Sao_Paulo');
     $horario_atual = date('H:i:s');
-    //var_dump($horario_atual);
 
     $data_entrada = date('Y/m/d');
 
@@ -22,7 +21,6 @@
 
     if(($result_ponto) and ($result_ponto->rowCount() != 0)){
         $row_ponto = $result_ponto->fetch(PDO::FETCH_ASSOC);
-        //var_dump($row_ponto);
         extract($row_ponto);
 
         if(($saida == "") or ($saida == null)){
@@ -45,14 +43,20 @@
         $cad_horario->bindParam(":horario_atual", $horario_atual);
         $cad_horario->bindParam(":id", $id_ponto);
         break;
+        default:
+            $_SESSION['mensagem'] = "Erro: Horário de saida já cadastrado!";
+            sleep(2);
+            header("Location: index.php");
+            exit;
     }
 
     $cad_horario->execute();
-    if($cad_horario->rowCount()){
-        echo "<p style='color: green'>Horario de $text_tipo_registro cadastrado com sucesso!<p>";
-    }else{
-        echo "<p style='color: red'>Horario de $text_tipo_registro não cadastrado com sucesso!<p>";
-
+    if ($cad_horario) {
+        if($cad_horario->rowCount()){
+            $_SESSION['mensagem'] = "Horário de $text_tipo_registro cadastrado com sucesso!";   
+        }else{
+            $_SESSION['mensagem'] = "Erro: Horário de saída já cadastrado!";
+        }
     }
     sleep(2);
     header("Location: index.php");

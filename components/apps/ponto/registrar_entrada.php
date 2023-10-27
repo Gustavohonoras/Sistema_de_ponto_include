@@ -31,6 +31,9 @@
             $tipo_registro = "entrada";
             $text_tipo_registro = "entrada";
         }
+    }else{
+        $tipo_registro = "entrada";
+        $text_tipo_registro = "entrada";
     }
 
     $cad_horario = null; // Inicialize a variável $cad_horario aqui
@@ -48,12 +51,12 @@
     if ($cad_horario) { // Verifique se $cad_horario não é nulo
         $cad_horario->execute();
         if ($cad_horario->rowCount()) {
-            echo "<p style='color: green'>Horário de $text_tipo_registro cadastrado com sucesso!</p>";
+            $_SESSION['mensagem'] = "Horário de $text_tipo_registro cadastrado com sucesso!";
         } else {
-            echo "<p style='color: red'>Horário de $text_tipo_registro não cadastrado com sucesso!</p>";
+            $_SESSION['mensagem'] = "Erro: Horário de entrada já cadastrado!";        
         }
     } else {
-        echo "<p style='color: red'>Erro: A variável \$cad_horario não está definida.</p>";
+        $_SESSION['mensagem'] = "Erro: Horário de entrada já cadastrado!";   
     }
     sleep(2);
     header("Location: index.php");

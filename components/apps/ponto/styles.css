@@ -249,3 +249,15 @@ footer {
     background: var(--brand-2, #FF6C13);
     height: 70px;
 }
+
+.success-message {
+    color: green;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}

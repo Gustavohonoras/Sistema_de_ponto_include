@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,6 +17,7 @@
 </head>
 
 <body>
+    
     <header>
         <img src="../../../src/image/Cabeçalho sem slogan - Branco.png" alt="logo-include" id="logo-include">
         <h1>Seja Bem Vindo(a) Gustavo! Tenha um ótimo dia de trabalho!</h1>
@@ -21,7 +25,6 @@
 
     <div class="caixa">
         <main>
-
             <div id="div-day-date">
                 <div class="day text" id="day">Sexta-Feira</div>,
                 <div class="date text" id="date">25/04/2023</div>
@@ -45,6 +48,20 @@
                         <div class="time text" id="timer"></div>
                     </div>
                 </form>
+            </div>
+            <div>
+                <?php
+                    if (isset($_SESSION['mensagem'])) {
+                        $mensagem = $_SESSION['mensagem'];
+                        $classe_mensagem = 'success-message';
+                        if (strpos($mensagem, 'Erro') !== false) {
+                            $classe_mensagem = 'error-message';
+                        }
+
+                    echo '<div class="' . $classe_mensagem . '">' . $mensagem . '</div>';
+                    unset($_SESSION['mensagem']);
+                    }
+                ?>
             </div>
         </main>
 
