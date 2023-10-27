@@ -30,21 +30,21 @@
             <div class="time text" id="time">20:35:45</div>
 
             <div class="container">
-                <div class="box-timer">
-                    <a href="registrar_entrada.php"><button id="first-button">Registrar Entrada</button></a>
+                <form action="registrar_entrada.php" method="post" class="box-timer">
+                    <button id="first-button">Registrar Entrada</button>
                     <div id="seccond-box">
                         <p class="register-text registerButton">Registro da Entrada</p>
                         <div class="time text" id="timer-enter"></div>
                     </div>
-                </div>
+                </form>
 
-                <div class="box-timer">
-                    <a href="registrar_saida.php"><button id="registerButton">Registrar Saída</button></a>
+                <form action="registrar_saida.php" method="post" class="box-timer">
+                    <button id="registerButton">Registrar Saída</button>
                     <div id="seccond-box">
                         <p class="register-text">Registro de Saída</p>
                         <div class="time text" id="timer"></div>
                     </div>
-                </div>
+                </form>
             </div>
         </main>
 
@@ -140,6 +140,7 @@
     </div>
 
     <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>

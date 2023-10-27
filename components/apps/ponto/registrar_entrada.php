@@ -3,7 +3,6 @@
 
     date_default_timezone_set('America/Sao_Paulo');
     $horario_atual = date('H:i:s');
-    //var_dump($horario_atual);
 
     $data_entrada = date('Y/m/d');
 
@@ -12,8 +11,8 @@
     $id_user = $_SESSION['id'];
 
     $query_ponto = "SELECT id, saida
-                    FROM  pontos
-                    WHERE user_id =:user_id
+                    FROM pontos
+                    WHERE user_id = :user_id
                     ORDER BY id DESC
                     LIMIT 1";
     $result_ponto = $conn->prepare($query_ponto);
@@ -22,7 +21,6 @@
 
     if(($result_ponto) and ($result_ponto->rowCount() != 0)){
         $row_ponto = $result_ponto->fetch(PDO::FETCH_ASSOC);
-        //var_dump($row_ponto);
         extract($row_ponto);
 
         if(($saida == "") or ($saida == null)){
@@ -35,6 +33,8 @@
         }
     }
 
+    $cad_horario = null; // Inicialize a variável $cad_horario aqui
+
     switch($tipo_registro){
         case "entrada":
             $query_horario = "INSERT INTO pontos (data_entrada, entrada, user_id) VALUES (:data_entrada, :entrada, :user_id)";
@@ -42,14 +42,20 @@
             $cad_horario->bindParam(":data_entrada", $data_entrada);
             $cad_horario->bindParam(":entrada", $horario_atual);
             $cad_horario->bindParam(":user_id", $id_user);
-
             break;
     }
-    
-    $cad_horario->execute();
-    if($cad_horario->rowCount()){
-        echo "<p style='color: green;>Horario de $text_tipo_registro cadastrado com sucesso!<p>";
-    }else{
-        echo "<p style='color: #f00;>Horario de $text_tipo_registro não cadastrado com sucesso!<p>";
+
+    if ($cad_horario) { // Verifique se $cad_horario não é nulo
+        $cad_horario->execute();
+        if ($cad_horario->rowCount()) {
+            echo "<p style='color: green'>Horário de $text_tipo_registro cadastrado com sucesso!</p>";
+        } else {
+            echo "<p style='color: red'>Horário de $text_tipo_registro não cadastrado com sucesso!</p>";
+        }
+    } else {
+        echo "<p style='color: red'>Erro: A variável \$cad_horario não está definida.</p>";
     }
+    sleep(2);
+    header("Location: index.php");
+    exit;
 ?>

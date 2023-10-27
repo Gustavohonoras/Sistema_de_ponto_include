@@ -49,9 +49,12 @@
 
     $cad_horario->execute();
     if($cad_horario->rowCount()){
-        echo "<p style='color: green;>Horario de $text_tipo_registro cadastrado com sucesso!<p>";
+        echo "<p style='color: green'>Horario de $text_tipo_registro cadastrado com sucesso!<p>";
     }else{
-        echo "<p style='color: #f00;>Horario de $text_tipo_registro não cadastrado com sucesso!<p>";
+        echo "<p style='color: red'>Horario de $text_tipo_registro não cadastrado com sucesso!<p>";
 
     }
-?>  
+    sleep(2);
+    header("Location: index.php");
+    exit;
+?>
