@@ -46,7 +46,7 @@
         default:
             $_SESSION['mensagem'] = "Erro: Horário de saida já cadastrado!";
             sleep(2);
-            header("Location: index.php");
+            header("Location: bater_ponto.php");
             exit;
     }
 
@@ -59,6 +59,6 @@
         }
     }
     sleep(2);
-    header("Location: index.php");
+    header("Location: bater_ponto.php");
     exit;
 ?>

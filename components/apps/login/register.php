@@ -6,8 +6,10 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <form method="POST" action="processar.php">
+    <h1>REGISTRAR:</h1>
+    <br>
 
+    <form method="POST" action="processar.php">
         <?php
             include_once("conexao.php");
 
@@ -22,9 +24,7 @@
                 $email = "";
             }
             unset($_SESSION['failed'], $_SESSION['name'], $_SESSION['email'])
-
         ?>
-
 
         <label for="name">Nome: </label>
         <input type="text" name="name" placeholder="Digite seu nome aqui" value="<?php echo $name?>">
@@ -33,10 +33,16 @@
         <input type="text" name="email" placeholder="Digite seu Email completo aqui" value="<?php echo $email?>">
 
         <label for="password">Senha: </label>
-        <input type="password" name="password" placeholder="Digite sua senha aqui">
+        <input type="password" name="password" placeholder="Digite seua senha aqui">
 
         <input type="submit" name="register">
     </form>
+
+    <br>
+    <br>
+    <a href="login.php">Logar Conta</a>
+    <br>
+    <a href="login_admin.php">Logar Admin</a>
     
 </body>
 </html>

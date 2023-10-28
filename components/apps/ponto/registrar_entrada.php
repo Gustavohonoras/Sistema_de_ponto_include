@@ -59,6 +59,6 @@
         $_SESSION['mensagem'] = "Erro: Horário de entrada já cadastrado!";   
     }
     sleep(2);
-    header("Location: index.php");
+    header("Location: bater_ponto.php");
     exit;
 ?>

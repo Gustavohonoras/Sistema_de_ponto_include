@@ -1,5 +1,19 @@
 <?php
     session_start();
+    include_once("conexao.php");
+    
+    
+
+    if(!isset($_SESSION['id'])){
+        header("Location: login.php");
+    }
+
+    $id = $_SESSION['id'];
+
+    $query = "SELECT * FROM users WHERE id='$id' ";
+    $result = $mysqli->query($query) or die("Falha na execução do código SQL: " . $mysqli->error);
+
+    $row = $result->fetch_assoc();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -19,8 +33,8 @@
 <body>
     
     <header>
-        <img src="../../../src/image/Cabeçalho sem slogan - Branco.png" alt="logo-include" id="logo-include">
-        <h1>Seja Bem Vindo(a) Gustavo! Tenha um ótimo dia de trabalho!</h1>
+        <img src="image/Cabeçalho sem slogan - Branco.png" alt="logo-include" id="logo-include">
+        <h1>Seja bem vindo <?php echo $row['name'];?>! Tenha um ótimo dia de trabalho!</h1>
     </header>
 
     <div class="caixa">
@@ -66,7 +80,7 @@
         </main>
 
 
-        <aside id="history">
+        <!--<aside id="history">
             <h1>Ultimos registros</h1>
             <div class="table-container">
                 <table class="table-item">
@@ -143,7 +157,7 @@
                 </table>
             </div>
 
-        </aside>
+        </aside> -->
 
         <footer>
             <h1 class="title-footer">Artigo 74 da CLT</h1>

@@ -13,6 +13,7 @@
 
             if(isset($_SESSION["failed"])){
                 $email = $_SESSION["email"];
+            
                 echo $_SESSION['failed'];
             }
             else{
@@ -30,6 +31,12 @@
 
         <input type="submit" name="login">
     </form>
+
+    <br>
+    <br>
+    <a href="register.php">Registrar Conta</a>
+    <br>
+    <a href="login_admin.php">Logar Admin</a>
     
 </body>
 </html>
