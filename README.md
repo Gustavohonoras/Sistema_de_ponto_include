@@ -1,3 +1,4 @@
+Ainda vou atualizar esse README com informações mais detalhadas!
 # Sistemna_de_ponto_include
 Basicamente separei por cima as telas por pastas para organizar melhor.
 Para rodar é preciso baixar o xampp, dar um start no Apache e no MySQL, acessar o localhost/phpmyadmin e colar o código que esta no arquivo ponto.sql. Além disso,
