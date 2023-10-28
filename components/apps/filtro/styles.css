@@ -2,18 +2,20 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: #212529;
+ 
 }
 
 body {
-    width: 100vw;
+   width: 100%;
+   background: #212529;
 }
 
 header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    align-content: center;
+    gap: 4rem;
+    width: 100%;
     height: 73px;
     background: #191C1F;
 }
@@ -25,20 +27,19 @@ header h1 {
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%;
+    padding: 0 50px;
+  
     /* 48px */
-    background: none;
+
 }
 
-header img {
-    margin-left: 50px;
-    margin-right: 135px;
-    background: none;
+header .container-img {
+    padding: 0 50px;
 }
 
-#logo-include {
+header #logo-include {
     width: 250px;
-    height: 40px;
+    
 }
 
 .text {
@@ -46,8 +47,8 @@ header img {
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
-    line-height: 140%;
     color: #ADB5BD;
+    
 }
 
 #div-day-date {
@@ -75,6 +76,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: auto;
 }
 
 .div-main h1 {
@@ -84,7 +86,7 @@ main {
     font-size: 33px;
     font-style: normal;
     font-weight: 600;
-    line-height: 140%;
+    text-align: center;
     margin-bottom: 20px;
 
 }
@@ -110,30 +112,16 @@ button {
     color: white;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%;
+    cursor: pointer;
 }
 
 footer {
-    padding: 60px 200px 60px 140px;
-    width: 100vw;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    
+
     background: var(--gray-1, #191C1F);
-
-}
-
-.text-footer {
-    width: 80vw;
-    color: var(--gray-5, #CED4DA);
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    background: var(--gray-1, #191C1F);
-
-}
-
-input::placeholder {
-    color: var(--gray-4, #ADB5BD);
 
 }
 
@@ -143,11 +131,53 @@ input::placeholder {
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%;
+
     background: var(--gray-1, #191C1F);
+}
+
+.text-footer {
+ 
+    color: var(--gray-5, #CED4DA);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+
+    background: var(--gray-1, #191C1F);
+
+}
+
+input::placeholder {
+    color: var(--gray-4, #ADB5BD);
+
 }
 
 .after-footer {
     background: var(--brand-2, #FF6C13);
     height: 70px;
+}
+
+/* responsividade */
+
+@media (max-width:715px) {
+    header{
+        height: auto;
+        flex-direction: column;
+        padding: 24px 0;
+        gap: 2rem;
+    }
+    header h1{
+        padding: 0;
+    }
+    header .container-img{
+        padding: 0;
+    }
+}
+@media (max-width:340px) {
+    .div-main input{
+        width: auto;
+    }
+    header #logo-include{
+       width: 70vw;
+    }
 }
