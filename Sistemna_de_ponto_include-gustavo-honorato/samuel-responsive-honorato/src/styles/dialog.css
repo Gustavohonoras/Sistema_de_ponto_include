@@ -1,5 +1,5 @@
 
-.modal{
+.modal , .modal__register{
     padding: 0;
    
     height: auto;
@@ -15,20 +15,27 @@
 
 }
 
-.modal__container{
+.modal__container {
     display: flex;
     align-items: center;
-
-
     flex-direction: column;
     align-items: flex-start;
-
-    padding: 0 36px;
+    padding: 30px 36px;
     gap: 36px;
 
 }
 
-.buttonAndTitle{
+.register__container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 36px;
+    gap: 36px;
+
+}
+
+.buttonAndTitle , .register__title--button{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -36,12 +43,12 @@
 
 }
 
-.modal__close{
+.modal__close , .register__close{
     border: none;
     background-color: var(--gray-2);
 }
 
-.modal__title{
+.modal__title , .register__title{
     color: var(--gray-7, #F8F9FA);
    
     font-family: Inter;
@@ -56,13 +63,13 @@ form{
     align-items: start;
     gap: 1rem;
 }
-.modal__inputs{
+.modal__inputs , .register__inputs{
     display: flex;
     flex-direction: column;
     width: 400px;
     gap: 1.5rem;
 }
-.modal__inputs input{
+.modal__inputs input , .register__inputs input{
     background: var(--gray-1, #191C1F);
     color: var(--gray-4, #ADB5BD);
     border: 1px solid var(--gray-1, #191C1F);
@@ -80,7 +87,13 @@ form{
     gap: 1rem;
     align-items: center;
 }
-.modal__button1{ 
+
+.modal__buttons2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.modal__button1 , .register__button{ 
     border-radius: 35px;
  
     width: 151px;
@@ -96,6 +109,16 @@ form{
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
+    font-weight: 600;
+    
+}
+
+.modal__button2 , .register__button2{ 
+    padding: 20px 32px; 
+    gap: 10px;
+    background:none;
+    color: var(--brand-1);
+    font-family: Inter;
     font-weight: 600;
     
 }
