@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28/10/2023 às 22:42
+-- Tempo de geração: 29/10/2023 às 21:57
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -66,7 +66,10 @@ INSERT INTO `pontos` (`id`, `data_entrada`, `entrada`, `saida`, `user_id`) VALUE
 (22, '2023-10-25', '14:05:03', '14:05:08', 14),
 (23, '2023-10-25', '14:34:29', '14:35:04', 15),
 (28, '2023-10-25', '19:12:13', '19:12:55', 16),
-(33, '2023-10-25', '19:32:59', '19:33:22', 11);
+(33, '2023-10-25', '19:32:59', '19:33:22', 11),
+(34, '2023-10-28', '17:44:08', '17:44:17', 10),
+(35, '2023-10-28', '17:44:36', '15:06:04', 10),
+(36, '2023-10-29', '17:51:43', '17:51:47', 11);
 
 -- --------------------------------------------------------
 
@@ -131,7 +134,7 @@ ALTER TABLE `adms`
 -- AUTO_INCREMENT de tabela `pontos`
 --
 ALTER TABLE `pontos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT de tabela `users`
