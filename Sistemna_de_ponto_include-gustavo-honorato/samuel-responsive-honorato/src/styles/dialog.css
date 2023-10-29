@@ -1,8 +1,6 @@
 
 .modal , .modal__register{
     padding: 0;
-   
-    height: auto;
     padding: .5rem;
     border-radius: 16px;
     border: 2px solid #FF4B13;

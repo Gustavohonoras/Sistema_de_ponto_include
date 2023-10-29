@@ -1,6 +1,7 @@
 function handleModal() {
     const button = document.querySelector(".header__button2");
     const button2 = document.querySelector(".banner__button");
+    const button3 = document.querySelector(".header__button1")
     const modalController = document.querySelector(".modal");
     
     button.addEventListener("click", () => {
@@ -10,6 +11,11 @@ function handleModal() {
 
     button2.addEventListener("click", () =>{
         modalController.showModal()
+    });
+    closeModal()
+
+    button3.addEventListener("click", () =>{
+      modalController.showModal()
     });
     closeModal()
     }
