@@ -16,6 +16,9 @@
     <header>
         <img src="image/logoinclude.svg" alt="logo-include" id="logo-include">
         <h1>Empresa ufc.ltda CNPJ:22451998.41</h1>
+        <form method="POST" action="../login/processar.php">
+        <div id="logout_style"><input type="submit" name="logout" value="Logout"></div>
+        </form>
     </header>
 
     <div class="container">
@@ -29,10 +32,21 @@
             <div class="time text" id="time">20:35:45</div>
 
             <div class="div-main">
-                <h1>Consultar Funcionário</h1>
-                <input class="input" placeholder="Nome do funcionário">
-                <input class="input" placeholder="Matrícula">
-                <button>Gerar Relatório</button>
+                <form action="filtrodata.php" method="post">
+                    <?php
+                    include_once("conexao.php");
+
+                    ?>
+                    <div>
+                        <h1>Consultar Funcionário</h1>
+                        <label for="name">Nome:</label>
+                        <input class="input" type="text" name="name" placeholder="Nome do funcionário" value="<?php echo $name ?>">
+                        <label for="data">Datas:</label>
+                        <input class="input" type="date" name="data_busca1" min="2023-01-01" placeholder="De:" value="">
+                        <input class="input" type="date" name="data_busca2" max="2100-12-31" placeholder="Até:" value="">
+                        <input type="submit" value="Filtrar">
+                    </div>
+                </form>
             </div>
         </main>
 

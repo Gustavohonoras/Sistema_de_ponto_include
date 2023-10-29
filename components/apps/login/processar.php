@@ -110,7 +110,37 @@
                 }
 
             }
+    }elseif(isset($_POST["login_adm"])) {
+        if($_POST["email_adm"] == "" || $_POST["password_adm"] == ""){
+            $_SESSION['failed'] = "Os campos não podem ser vazios!";
+            $_SESSION['email_adm'] = "";
+
+            header("Location: index.php");
+        }
+        else{
+            $email_adm = $mysqli->real_escape_string($_POST["email_adm"]);
+            $password_adm = $mysqli->real_escape_string($_POST["password_adm"]);
+
+
+            $result = mysqli_query($mysqli , "SELECT * FROM adms WHERE email='$email_adm' AND password=sha1('$password_adm')");
+
+            $row = mysqli_fetch_assoc($result);
+
+            if(is_array($row) && !empty($row)) {
+                $_SESSION['id'] = $row['id'];
+                header("Location: ../filtro/index.php");
+            } 
+            else {
+                $_SESSION['failed'] = "Login ou senha inválidos!";
+                $_SESSION['email'] = $email;
+                header("Location: login_adm.php");
+                exit();
+            }
+
+        }
+
     }
+
     elseif(isset($_POST['update'])){
         if(empty($_POST['name']) && empty($_POST['email'])){
             $_SESSION['failed'] = "Os campos não podem ser vazios!";

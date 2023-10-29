@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28/10/2023 às 06:28
+-- Tempo de geração: 28/10/2023 às 22:42
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -20,6 +20,26 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `ponto`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `adms`
+--
+
+CREATE TABLE `adms` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `adms`
+--
+
+INSERT INTO `adms` (`id`, `name`, `email`, `password`) VALUES
+(1, 'rogerio', 'rogeriomachadopio@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef');
 
 -- --------------------------------------------------------
 
@@ -79,6 +99,12 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
 --
 
 --
+-- Índices de tabela `adms`
+--
+ALTER TABLE `adms`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Índices de tabela `pontos`
 --
 ALTER TABLE `pontos`
@@ -94,6 +120,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT para tabelas despejadas
 --
+
+--
+-- AUTO_INCREMENT de tabela `adms`
+--
+ALTER TABLE `adms`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `pontos`

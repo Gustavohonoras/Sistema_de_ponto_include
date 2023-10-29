@@ -33,8 +33,11 @@
 <body>
     
     <header>
-        <img src="image/Cabeçalho sem slogan - Branco.png" alt="logo-include" id="logo-include">
+        <img src="image/logoinclude.svg" alt="logo-include" id="logo-include">
         <h1>Seja bem vindo <?php echo $row['name'];?>! Tenha um ótimo dia de trabalho!</h1>
+        <form method="POST" action="../login/processar.php">
+        <div id="logout_style"><input type="submit" name="logout" value="logout"></div>
+        </form>
     </header>
 
     <div class="caixa">

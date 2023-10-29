@@ -60,3 +60,32 @@ em{
     line-height: 150%;
     border-radius: 30px;
 }
+
+.banner_supervisor{
+    display: flex;
+    justify-content: center;
+    background: var(--gray-2, #212529);
+    height: auto;
+    align-items: center;
+}
+
+.supervisor__content{
+    padding: 120px 236px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap ;
+    align-items: center;
+    gap: 40px;
+}
+
+.email_style{
+    display: flex;
+    width: 300px;
+    height: 40px;
+}
+
+.password_style{
+    display: flex;
+    width: 300px;
+    height: 40px;
+}

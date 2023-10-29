@@ -1,93 +1,103 @@
-.modal{
+
+.modal , .modal__register{
     padding: 0;
-    width: 550px;
-    height: 393px;
-    flex-shrink: 0;
+    padding: .5rem;
     border-radius: 16px;
     border: 2px solid #FF4B13;
     background: var(--gray-2, #212529);
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
 }
 
-.modal__container{
+.modal__container {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    padding: 36px 28px;
     flex-direction: column;
     align-items: flex-start;
+    padding: 30px 36px;
     gap: 36px;
 
 }
 
-.buttonAndTitle{
+.register__container{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    width: 494px;
-    height: 51px;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 36px;
+    gap: 36px;
 
 }
 
-.modal__close{
+.buttonAndTitle , .register__title--button{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.modal__close , .register__close{
     border: none;
     background-color: var(--gray-2);
 }
 
-.modal__title{
+.modal__title , .register__title{
     color: var(--gray-7, #F8F9FA);
-    text-align: center;
+   
     font-family: Inter;
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
     line-height: 160%; 
 }
-
-.modal__input , .modal__password{
+form{
     display: flex;
-    width: 448px;
-    padding: 14px 20px;
-    align-items: flex-start;
-    gap: 10px;
-    border: 1px solid var(--gray-1, #191C1F);
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+.modal__inputs , .register__inputs{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 1.5rem;
+}
+.modal__inputs input , .register__inputs input{
     background: var(--gray-1, #191C1F);
     color: var(--gray-4, #ADB5BD);
-    text-align: center;
+    border: 1px solid var(--gray-1, #191C1F);
     font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%; /* 32px */
-    text-align: left;
-
-
+    padding: 14px ;
+    width: 100%;
+    
 }
-
 .modal__buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 136px;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
     margin-top: 25px;
-    flex-direction: row-reverse;
+    gap: 1rem;
     align-items: center;
 }
 
-.modal__inputs{
+.modal__buttons2{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 22px;
+    width: 100%;
 }
-.modal__button1{ 
+.modal__button1 , .register__button{ 
     border-radius: 35px;
-    display: flex;
+ 
     width: 151px;
     height: 60px;
     padding: 20px 32px;
-    justify-content: center;
-    align-items: center;
+    
     gap: 10px;
     flex-shrink: 0;
     background: var(--brand-1, #FF4B13);
@@ -98,9 +108,18 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%; /* 24px */
+    
 }
 
+.modal__button2 , .register__button2{ 
+    padding: 20px 32px; 
+    gap: 10px;
+    background:none;
+    color: var(--brand-1);
+    font-family: Inter;
+    font-weight: 600;
+    
+}
 .modal__register--button{
     color:var(--brand-1);
 
@@ -109,8 +128,10 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%; }
-
+ }
 dialog::backdrop{
     background: rgba(0, 0, 0, 0.51);
 }
+
+
+
