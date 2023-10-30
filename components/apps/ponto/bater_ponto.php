@@ -1,20 +1,3 @@
-<?php
-    session_start();
-    include_once("conexao.php");
-    
-    
-
-    if(!isset($_SESSION['id'])){
-        header("Location: login.php");
-    }
-
-    $id = $_SESSION['id'];
-
-    $query = "SELECT * FROM users WHERE id='$id' ";
-    $result = $mysqli->query($query) or die("Falha na execução do código SQL: " . $mysqli->error);
-
-    $row = $result->fetch_assoc();
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -31,6 +14,22 @@
 </head>
 
 <body>
+<?php
+    session_start();
+    include_once("conexao.php");
+    
+
+    if(!isset($_SESSION['id'])){
+        header("Location: login.php");
+    }
+
+    $id = $_SESSION['id'];
+
+    $query = "SELECT * FROM users WHERE id='$id' ";
+    $result = $mysqli->query($query) or die("Falha na execução do código SQL: " . $mysqli->error);
+
+    $row = $result->fetch_assoc();
+?>
     
     <header>
         <a href="../login/index.php" ><img src="image/logoinclude.svg" alt="logo-include" id="logo-include"></a>
@@ -81,7 +80,6 @@
                 ?>
             </div>
         </main>
-<<<<<<< HEAD
 
         <aside id="history">
             <h1>Ultimos registros</h1>
@@ -110,8 +108,6 @@
                 }
             ?>
         </aside>
-=======
->>>>>>> 704ae98cb991dd56e1b7cb803351649e147cd7d7
     </div>
     
     <footer class="footer">

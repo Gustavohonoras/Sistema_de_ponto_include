@@ -32,11 +32,7 @@
             <div class="time text" id="time">20:35:45</div>
 
             <div class="div-main">
-<<<<<<< HEAD
                 <form action="test.php" method="POST">
-=======
-                <form action="filtro.php" method="post">
->>>>>>> 704ae98cb991dd56e1b7cb803351649e147cd7d7
                     <?php
                     include_once("conexao.php");
 
@@ -46,11 +42,7 @@
                         <input class="input" type="text" name="nome" placeholder="Nome do funcionário" value="">
                         <input class="input" type="date" name="data_busca1" min="2023-01-01" placeholder="De:" value="">
                         <input class="input" type="date" name="data_busca2" max="2100-12-31" placeholder="Até:" value="">
-<<<<<<< HEAD
                         <input class="banner__button" type="submit" value="Filtrar" name="filtrar">
-=======
-                        <input class="banner__button" type="submit" value="Filtrar">
->>>>>>> 704ae98cb991dd56e1b7cb803351649e147cd7d7
                     </div>
                 </form>
 

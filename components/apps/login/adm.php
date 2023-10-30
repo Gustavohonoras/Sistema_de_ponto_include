@@ -38,13 +38,6 @@
 
     </section>
 
-    <section class="about">
-        <div class="about__content">
-            <h2 class="about__title">Quem somos nós?</h2>
-            <p class="about__text text1">Estudantes de T.I do campus de Russas no processo seletivo para sermos patinhos desenvolvemos <br> esse sistema que tem como funcionalidade registrar as horas trabalhadas pelos funcionários de sua empresa.</p>
-        </div>
-    </section>
-
     <footer class="footer">
         <p class="footer__text">Produzido pelos trainees da Include</p>
     </footer>
