@@ -1,5 +1,5 @@
 .header{
-   
+    height: 100px;
     justify-content: center;
     display: flex;
     border-bottom: 2px solid var(--brand-1, #FF4B13);

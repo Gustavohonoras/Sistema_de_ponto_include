@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <div class="header__content">
-            <img class="header__img" src="image/logoinclude.svg" alt="">
+            <a href="index.php" ><img class="header__img" src="image/logoinclude.svg" alt=""></a>
             <a id="link_supervisor" href="adm.php"><button class="header__button1" type="button">Acesso Surpevisor</button></a>
         <button class="header__button2" type="button">Bater Ponto</button>
         </div>

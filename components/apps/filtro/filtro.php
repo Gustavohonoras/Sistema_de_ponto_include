@@ -7,11 +7,12 @@ $date1 = $_POST['data_busca1'];
 $date2 = $_POST['data_busca2'];
 $nome = $_POST['nome'];
 
+filtrodata($nome,$date1,$date2);
 // Função para tratar as datas
 function tratamentodata($startDate, $endDate) {
     if (!empty($startDate) && !empty($endDate)) {
-        $startDate = new DateTime($startDate);
-        $endDate = new DateTime($endDate);
+        $startDate = new DateTime();
+        $endDate = new DateTime();
 
         $data1 = $startDate->format("Y-m-d");
         $data2 = $endDate->format("Y-m-d");
@@ -24,6 +25,7 @@ function tratamentodata($startDate, $endDate) {
 
 // Função para realizar a pesquisa por data e nome
 function filtrodata($data1, $data2, $nome) {
+
     global $mysqli; // Certifique-se de que $mysqli esteja definido corretamente no arquivo "conexao.php"
 
     if (!empty($data1) && !empty($data2)) {

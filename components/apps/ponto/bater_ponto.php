@@ -33,7 +33,7 @@
 <body>
     
     <header>
-        <img src="image/logoinclude.svg" alt="logo-include" id="logo-include">
+        <a href="../login/index.php" ><img src="image/logoinclude.svg" alt="logo-include" id="logo-include"></a>
         <h1>Seja bem vindo <?php echo $row['name'];?>! Tenha um ótimo dia de trabalho!</h1>
         <form method="POST" action="../login/processar.php">
         <div><input class="banner__button" type="submit" name="logout" value="logout"></div>

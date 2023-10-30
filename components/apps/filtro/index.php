@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <img src="image/logoinclude.svg" alt="logo-include" id="logo-include">
+        <a href="../login/index.php" ><img src="image/logoinclude.svg" alt="logo-include" id="logo-include"></a>
         <h2>Painel do Supervisor</h2>
         <form method="POST" action="../login/processar.php">
         <div><input class="banner__button" type="submit" name="logout" value="Logout"></div>

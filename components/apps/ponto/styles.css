@@ -11,8 +11,9 @@ header {
     flex-direction: row;
     align-items: center;
     align-content: center;
-    height: 73px;
+    height: 100px;
     background: #191C1F;
+    border-bottom: 2px solid var(--brand-1, #FF4B13);
 }
 
 header h1 {

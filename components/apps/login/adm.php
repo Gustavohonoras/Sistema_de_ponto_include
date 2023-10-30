@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <div class="header__content1">
-            <img class="header__img1" src="image/logoinclude.svg" alt="">
+            <a href="index.php" ><img class="header__img1" src="image/logoinclude.svg" alt=""></a>
             <h2>Acesso supervisor</h2>
             <form method="POST" action="../login/processar.php">
                 <div><input class="banner__button" type="submit" name="voltar" value="Voltar"></div>
