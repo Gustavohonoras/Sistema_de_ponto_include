@@ -1,4 +1,4 @@
-Passos para rodar o sistema
+# Passos para rodar o sistema
 # Sistemna_de_ponto_include
 
 1: Baixar o xampp 
