@@ -81,6 +81,7 @@
                 ?>
             </div>
         </main>
+<<<<<<< HEAD
 
         <aside id="history">
             <h1>Ultimos registros</h1>
@@ -109,6 +110,8 @@
                 }
             ?>
         </aside>
+=======
+>>>>>>> 704ae98cb991dd56e1b7cb803351649e147cd7d7
     </div>
     
     <footer class="footer">
