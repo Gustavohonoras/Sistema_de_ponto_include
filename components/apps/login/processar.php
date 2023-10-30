@@ -25,9 +25,10 @@
                 $result_usuario = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', sha1('$password') )";
                 $resultado_usuario = $mysqli->query($result_usuario);
 
-                header("Location: ../ponto/bater_ponto.php");
+                header("Location: ../login/index.php");
             }
             else {
+                echo "oiii";
                 $_SESSION['failed'] = "Este nome já está registrado!";
                 $_SESSION['name'] = $name;
                 $_SESSION['email'] = $email;
@@ -133,7 +134,7 @@
             else {
                 $_SESSION['failed'] = "Login ou senha inválidos!";
                 $_SESSION['email'] = $email;
-                header("Location: login_adm.php");
+                header("Location: adm.php");
                 exit();
             }
 

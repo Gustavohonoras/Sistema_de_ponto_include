@@ -1,3 +1,6 @@
+main{
+    display: inline-block;
+}
 .banner{
     display: flex;
     justify-content: center;
@@ -5,13 +8,18 @@
 }
 
 .banner__content{
-    padding: 120px 236px;
+    padding: 150px 120px 236px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap ;
     align-items: center;
     gap: 44px;
 }
+
+.banner__content .banner__button{
+    margin: 0;
+}
+
 .banner__title{
     color: var(--gray-6, #EDF2FF);
     text-align: center;
@@ -42,6 +50,16 @@ em{
     line-height: 150%; 
 }
 
+.text_h2{
+    text-align: center;
+    font-family: Inter;
+    color: #EDF2FF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+}
+
 .banner__button{
     display: flex;
     height: 60px;
@@ -50,15 +68,23 @@ em{
     align-items: center;
     gap: 10px;
     border: 1px solid var(--brand-1, #FF4B13);
-    background: var(--brand-1, #FF4B13);
-    color: var(--gray-7, #F8F9FA);
+    color: var(--gray-7, #F8F9FA); 
+    background: var(--gray-1);
     text-align: center;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%;
+    line-height: 150%; 
     border-radius: 30px;
+    margin-left: 100px;
+}
+
+
+.banner__button:hover{
+    border: 1px solid var(--brand-1, #FF4B13);
+    background: var(--brand-1, #FF4B13);
+    color: var(--gray-7, #F8F9FA);
 }
 
 .banner_supervisor{
@@ -78,14 +104,30 @@ em{
     gap: 40px;
 }
 
+.supervisor__content .banner__button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
 .email_style{
     display: flex;
     width: 300px;
     height: 40px;
+    padding-left: 10px;
+}
+
+.name_style{
+    display: flex;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
 }
 
 .password_style{
     display: flex;
     width: 300px;
     height: 40px;
+    padding-left: 10px;
 }

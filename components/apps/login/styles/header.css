@@ -81,8 +81,6 @@ a {
     font-weight: 600;
     line-height: 150%; 
     border-radius: 30px;
- 
-
 }
 
 .header__button1:hover , .header__button2:hover{
@@ -91,11 +89,11 @@ a {
     color: var(--gray-7, #F8F9FA);
 }
 
-header h1 {
+header h2 {
     color: #FFF;
     text-align: center;
     font-family: Inter;
-    font-size: 35px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;

@@ -6,31 +6,32 @@
 }
 
 body {
-   width: 100%;
-   background: #212529;
+    width: 100%;
+    background: #212529;
 }
 
 header {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
-    gap: 4rem;
+    gap: 8rem;
     width: 100%;
     height: 73px;
     background: #191C1F;
 }
 
-header h1 {
+header h2 {
     color: #FFF;
     text-align: center;
     font-family: Inter;
-    font-size: 22px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
-    padding: 0 50px;
-  
-    /* 48px */
+    line-height: 150%;
 
+    /* 48px */
+    background: none;
 }
 
 header .container-img {
@@ -40,6 +41,37 @@ header .container-img {
 header #logo-include {
     width: 250px;
     
+}
+
+.text_h2{
+    text-align:left;
+    font-family: Inter;
+    color: #EDF2FF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.email_style{
+    display: flex;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.name_style{
+    display: flex;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.password_style{
+    display: flex;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
 }
 
 .text {
@@ -68,30 +100,20 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
 }
 
 .div-main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: auto;
-}
-
-.div-main h1 {
-    color: white;
-
-    font-family: Inter;
-    font-size: 33px;
-    font-style: normal;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 20px;
-
+    gap: 250px;
 }
 
 .input {
+    display: flex;
     width: 300px;
     height: 45px;
     font-family: Inter;
@@ -115,36 +137,54 @@ button {
     cursor: pointer;
 }
 
-footer {
-    padding: 60px;
+.banner__button{
     display: flex;
+    height: 60px;
+    padding: 20px 32px;
     justify-content: center;
-    
-
-    background: var(--gray-1, #191C1F);
-
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--brand-1, #FF4B13);
+    color: var(--gray-7, #F8F9FA); 
+    background: var(--gray-1);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+    border-radius: 30px;
 }
 
-.title-footer {
-    color: var(--gray-5, #CED4DA);
-    font-family: Inter;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-
-    background: var(--gray-1, #191C1F);
+.banner__button:hover{
+    border: 1px solid var(--brand-1, #FF4B13);
+    background: var(--brand-1, #FF4B13);
+    color: var(--gray-7, #F8F9FA);
 }
 
-.text-footer {
- 
-    color: var(--gray-5, #CED4DA);
+.footer {
+    display: flex;
+    width: 100%;
+    height: 112px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: var(--brand-2, #FF6C13);
+}
+
+.footer__text{
+    color: #000000;
+    text-align: center;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+}
 
-    background: var(--gray-1, #191C1F);
-
+footer img{
+    width: 30px;
 }
 
 input::placeholder {

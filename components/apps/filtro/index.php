@@ -15,9 +15,9 @@
 <body>
     <header>
         <img src="image/logoinclude.svg" alt="logo-include" id="logo-include">
-        <h1>Empresa ufc.ltda CNPJ:22451998.41</h1>
+        <h2>Painel do Supervisor</h2>
         <form method="POST" action="../login/processar.php">
-        <div id="logout_style"><input type="submit" name="logout" value="Logout"></div>
+        <div><input class="banner__button" type="submit" name="logout" value="Logout"></div>
         </form>
     </header>
 
@@ -32,34 +32,40 @@
             <div class="time text" id="time">20:35:45</div>
 
             <div class="div-main">
-                <form action="filtrodata.php" method="post">
+                <form action="filtro.php" method="post">
                     <?php
                     include_once("conexao.php");
 
                     ?>
-                    <div>
-                        <h1>Consultar Funcionário</h1>
-                        <label for="name">Nome:</label>
-                        <input class="input" type="text" name="name" placeholder="Nome do funcionário" value="<?php echo $name ?>">
-                        <label for="data">Datas:</label>
+                    <div class="consulta">
+                        <h2 class="text_h2">Consultar Funcionário</h2>
+                        <input class="input" type="text" name="nome" placeholder="Nome do funcionário" value="">
                         <input class="input" type="date" name="data_busca1" min="2023-01-01" placeholder="De:" value="">
                         <input class="input" type="date" name="data_busca2" max="2100-12-31" placeholder="Até:" value="">
-                        <input type="submit" value="Filtrar">
+                        <input class="banner__button" type="submit" value="Filtrar">
                     </div>
                 </form>
+
+                <form method="POST" action="../login/processar.php" name="register">
+                    <?php
+                        include_once("conexao.php");
+                    ?>
+                    <div class="supervisor__content">
+                        <h2 class="text_h2"> Cadastrar Funcionário: </h2>
+                        <input class="input" type="text" name="name" placeholder="Nome: ">
+                        <input class="input" type="text" name="email" placeholder="Email: ">
+                        <input class="input" type="password" name="password" placeholder="Senha: ">
+                        <input class="banner__button" type="submit" name="register" value="Register">
+                    </div>
             </div>
+        </form>
         </main>
-
-        <footer>
-            <h1 class="title-footer">Artigo 74 da CLT</h1>
-            <h2 class="text-footer">Segundo o texto, todo estabelecimento com mais de 20 colaboradores tem a obrigação
-                de registrar e
-                acompanhar o ponto dos trabalhadores. Além disso, esse registro pode ser feito de três formas
-                diferentes: sistema manual, mecânico ou eletrônico.</h2>
-        </footer>
-
-        <div class="after-footer"></div>
     </div>
+
+    <footer class="footer">
+        <img src="image/copyright.png" alt="">
+        <p class="footer__text">Produzido pelos trainees da Include</p>
+    </footer>
 
     <script src="./script.js"></script>
 </body>

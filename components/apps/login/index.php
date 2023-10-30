@@ -12,7 +12,7 @@
     <header class="header">
         <div class="header__content">
             <img class="header__img" src="image/logoinclude.svg" alt="">
-            <a id="link_supervisor" href="login_adm.php"><button class="header__button1" type="button">Acesso Surpevisor</button></a>
+            <a id="link_supervisor" href="adm.php"><button class="header__button1" type="button">Acesso Surpevisor</button></a>
         <button class="header__button2" type="button">Bater Ponto</button>
         </div>
         
@@ -47,7 +47,7 @@
                 <input type="text" name="email" placeholder="Email: " class="modal__input">
                 <input type="password" name="password" placeholder="Senha: " class="modal__password">
                 <input class="modal__button1" type="submit" name="login" value="Login">
-                <button class="modal__button2">Não Possuo conta</button>
+                
             </div>
         </form>
     </div>
@@ -78,7 +78,7 @@
     <section class="banner">
         <div class="banner__content">
             <h1 class="banner__title title1 ">O <emseu></em> sistema gerencial de <em>bater ponto</em>.</h1>
-            <p class="banner__text text1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <p class="banner__text text1"> Bate Ponto Include: Seu aliado para o controle de horários.<br> Registre sua jornada de trabalho de maneira simples e eficaz.</p>
             <button class="banner__button" type="button">Bater Ponto</button>
         </div>
     </section>
@@ -91,7 +91,8 @@
     </section>
 
     <footer class="footer">
-        <p class="footer__text">Empresa ufc.ltda CNPJ:22451998.41</p>
+        <img src="image/copyright.png" alt="">
+        <p class="footer__text">Produzido pelos trainees da Include</p>
     </footer>
 </body>
 </html>

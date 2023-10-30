@@ -2,12 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: #212529;
 }
 
-body {
-    width: 100vw;
-}
+
 
 header {
     display: flex;
@@ -39,11 +36,6 @@ header img {
 #logo-include {
     width: 250px;
     height: 70px;
-}
-
-#logout_style{
-    position: absolute;
-    margin: -10px 100px;
 }
 
 main {
@@ -160,6 +152,7 @@ main {
 /* Código dá caixa maior para abrigar main, aside e footer */
 .caixa {
     display: flex;
+    background: #212529;
     flex-direction: column;
 
 }
@@ -186,10 +179,6 @@ aside h1 {
     font-weight: 400;
     line-height: 140%;
     margin-bottom: 15px;
-}
-
-aside div {
-    width: 100%;
 }
 
 .paragraph {
@@ -222,37 +211,28 @@ aside div {
 }
 
 footer {
-    padding: 60px 200px 60px 140px;
-    width: 100vw;
-    background: var(--gray-1, #191C1F);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px 0px 30px 0px;
+    width: 100%;
+    gap: 10px;
+    background: var(--gray-1, #FF6C13);
 
 }
 
-.text-footer {
-    width: 80vw;
-    color: var(--gray-5, #CED4DA);
+footer img{
+    width: 30px;
+}
+
+.footer__text{
+    color: #000000;
+    text-align: center;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    background: var(--gray-1, #191C1F);
-
-}
-
-.title-footer {
-    color: var(--gray-5, #CED4DA);
-    font-family: Inter;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 140%;
-    background: var(--gray-1, #191C1F);
-}
-
-.after-footer {
-    background: var(--brand-2, #FF6C13);
-    height: 70px;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
 }
 
 .success-message {
@@ -265,6 +245,32 @@ footer {
     color: red;
     font-size: 15px;
     font-weight: bold;
+}
+
+.banner__button{
+    display: flex;
+    height: 60px;
+    padding: 20px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--brand-1, #FF4B13);
+    color: var(--gray-7, #F8F9FA); 
+    background: var(--gray-1);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+    border-radius: 30px;
+    margin-left: 100px;
+}
+
+.banner__button:hover{
+    border: 1px solid var(--brand-1, #FF4B13);
+    background: var(--brand-1, #FF4B13);
+    color: var(--gray-7, #F8F9FA);
 }
 
 @media (max-width:800px) {
