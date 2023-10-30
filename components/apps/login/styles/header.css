@@ -1,0 +1,103 @@
+.header{
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    border-bottom: 2px solid var(--brand-1, #FF4B13);
+    background: var(--gray-1, #191C1F);
+}
+
+.header__content{ 
+    padding: 20px 4px 20px 76px;
+    align-items: flex-start;
+    gap: 201px;
+    display: flex;
+    align-items: center;
+}
+
+.header__content1{
+    margin-left: 60px;
+    padding: 20px 4px 30px 7px;
+    align-items: flex-start;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header__img{
+    width: 250px;
+    height: 70px;
+}
+
+.header__img1{
+    margin-left: -200px;
+    width: 250px;
+    height: 75px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#voltar{
+    margin-left: 150px;
+}
+
+.header__button1{
+    display: flex;
+    width: 194px;
+    height: 60px;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--brand-1, #FF4B13);
+    color: var(--gray-7, #F8F9FA);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+    background: var(--gray-1);
+    border-radius: 30px;
+}
+
+
+
+.header__button2{
+    display: flex;
+    height: 60px;
+    padding: 20px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--brand-1, #FF4B13);
+    color: var(--gray-7, #F8F9FA); 
+    background: var(--gray-1);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+    border-radius: 30px;
+}
+
+.header__button1:hover , .header__button2:hover{
+    border: 1px solid var(--brand-1, #FF4B13);
+    background: var(--brand-1, #FF4B13);
+    color: var(--gray-7, #F8F9FA);
+}
+
+header h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin-left: 150px;
+    /* 48px */
+    background: none;
+}
