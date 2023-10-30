@@ -1,18 +1,3 @@
-
-.modal , .modal__register{
-    padding: 0;
-    padding: .5rem;
-    border-radius: 16px;
-    border: 2px solid #FF4B13;
-    background: var(--gray-2, #212529);
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-
-}
-
 .modal__container {
     display: flex;
     align-items: center;
@@ -67,15 +52,27 @@ form{
     width: 400px;
     gap: 1.5rem;
 }
-.modal__inputs input , .register__inputs input{
+.modal__input , .modal__password{
     background: var(--gray-1, #191C1F);
     color: var(--gray-4, #ADB5BD);
     border: 1px solid var(--gray-1, #191C1F);
     font-family: Inter;
     padding: 14px ;
-    width: 100%;
+    width: 90%;
     
 }
+
+.modal , .modal__register{
+    padding: 0;
+    padding: .5rem;
+    border-radius: 16px;
+    border: 1px solid #FF4B13;
+    background: var(--gray-2, #212529);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .modal__buttons {
     display: flex;
     flex-wrap: wrap;
@@ -91,24 +88,30 @@ form{
     justify-content: center;
     width: 100%;
 }
-.modal__button1 , .register__button{ 
-    border-radius: 35px;
- 
-    width: 151px;
+
+.modal__button1{
+    display: flex;
     height: 60px;
     padding: 20px 32px;
-    
+    justify-content: center;
+    align-items: center;
     gap: 10px;
-    flex-shrink: 0;
-    background: var(--brand-1, #FF4B13);
-    border: none;
-    color: var(--gray-7, #F8F9FA);
+    border: 1px solid var(--brand-1, #FF4B13);
+    color: var(--gray-7, #F8F9FA); 
+    background: var(--gray-1);
     text-align: center;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    
+    line-height: 150%; 
+    border-radius: 30px;
+}
+
+.modal__button1:hover{
+    border: 1px solid var(--brand-1, #FF4B13);
+    background: var(--brand-1, #FF4B13);
+    color: var(--gray-7, #F8F9FA);
 }
 
 .modal__button2 , .register__button2{ 

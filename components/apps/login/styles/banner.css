@@ -51,12 +51,11 @@ em{
 }
 
 .text_h2{
-    text-align: center;
     font-family: Inter;
     color: #EDF2FF;
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 150%;
 }
 
@@ -99,7 +98,7 @@ em{
     padding: 120px 236px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     align-items: center;
     gap: 40px;
 }

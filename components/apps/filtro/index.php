@@ -37,8 +37,8 @@
                     include_once("conexao.php");
 
                     ?>
-                    <div class="consulta">
-                        <h2 class="text_h2">Consultar Funcionário</h2>
+                    <div>
+                        <h2 class="text_h2">Consultar Funcionário: </h2>
                         <input class="input" type="text" name="nome" placeholder="Nome do funcionário" value="">
                         <input class="input" type="date" name="data_busca1" min="2023-01-01" placeholder="De:" value="">
                         <input class="input" type="date" name="data_busca2" max="2100-12-31" placeholder="Até:" value="">

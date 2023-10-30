@@ -51,6 +51,7 @@ header #logo-include {
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
+    margin: 20px 0px;
 }
 
 .email_style{
@@ -117,10 +118,11 @@ main {
     width: 300px;
     height: 45px;
     font-family: Inter;
+    color: #ADB5BD;
     padding-left: 20px;
     background: #191C1F;
     border: 1px solid #191C1F;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 button {
