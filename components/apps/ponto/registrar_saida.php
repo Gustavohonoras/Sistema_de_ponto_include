@@ -26,7 +26,7 @@
         if(($saida == "") or ($saida == null)){
             $col_tipo_registro = "saida";
             $tipo_registro = "editar";
-            $text_tipo_registro = "saída";
+            $text_tipo_registro = "<span style='color: lightcoral;'>saída</span>";
         }else{
             $tipo_registro = "entrada";
             $text_tipo_registro = "entrada";

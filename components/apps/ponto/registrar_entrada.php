@@ -29,7 +29,7 @@
             $text_tipo_registro = "saída";
         }else{
             $tipo_registro = "entrada";
-            $text_tipo_registro = "entrada";
+            $text_tipo_registro = "<span style='color: lightgreen;'>entrada</span>";
         }
     }else{
         $tipo_registro = "entrada";
