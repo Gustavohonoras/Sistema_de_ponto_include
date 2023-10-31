@@ -1,6 +1,7 @@
 <?php
 session_start();
 include_once("conexao.php");
+date_default_timezone_set('America/Sao_Paulo');
 
 // Obtenha os valores dos campos do formulário
 $date1 = $_POST['data_busca1'];
@@ -42,13 +43,15 @@ function filtrodata($data1, $data2, $nome) {
             $query = "SELECT * FROM pontos WHERE data_entrada BETWEEN '$data_busca1' AND '$data_busca2' AND user_id='$id' ORDER BY data_entrada ASC";
             $results_nomes = $mysqli->query($query);
 
+            echo '<h2>' . $nome . '</h2>';
             echo '<table class="tabela">';
             while ($rows_nomes = $results_nomes->fetch_assoc()) {
-                echo '<tr>';
-                echo '<td>' . date('d/m/y', strtotime($rows_nomes['data_entrada'])) . '</td>';
-                echo '<td>' . $rows_nomes['entrada'] . '</td>';
-                echo '<td>' . $rows_nomes['saida'] . '</td>';
-                echo '<td>' . $row['name'] . '</td>';
+                echo '<tr class="estilo">';
+                echo '<td class="estilo">' . date('d/m/y', strtotime($rows_nomes['data_entrada'])) . '<--></td>';
+                echo '<td class="estilo" style="color: lightgreen;">De: '  . '</td>';
+                echo '<td class="estilo">' . $rows_nomes['entrada'] . '</td>';
+                echo '<td class="estilo" style="color: lightcoral;">Até: '  . '</td>';
+                echo '<td class="estilo">' . $rows_nomes['saida'] . '</td>';
                 // Adicione mais colunas à tabela conforme necessário
                 echo '</tr>';
             }

@@ -32,5 +32,7 @@ Depois disso é só ser feliz
 Os passos 6, 11, 12, 13 devem ser feitos toda vez que for iniciar o sistema, os outros não necessariamente, apenas
 execute o 7 se quiser ver o banco de dados
 
+*Importante:* Acesso do supervidor-> email: "supervisor@gmail.com" senha: "supervisor2023"
+
 Imagem do passo 4:
 ![image](https://github.com/Gustavohonoras/Sistemna_de_ponto_include/assets/108849824/5958ba1a-9fa3-42bc-90e7-5ef7ebe3ff21)
