@@ -32,9 +32,11 @@ Depois disso é só ser feliz
 Os passos 6, 11, 12, 13 devem ser feitos toda vez que for iniciar o sistema, os outros não necessariamente, apenas
 execute o 7 se quiser ver o banco de dados
 
+*Importante:* Caso o sistema não encontre a pasta, digitar "localhost" no navegador e ir navegando pelas pastas até chegar em "login\index.php"
 *Importante:* Acesso do supervidor-> email: "supervisor@gmail.com" senha: "supervisor2023"
 *Importante:* O banco de dados enviado esta sem usuarios cadastrados, para rodar o sistema, começar por acesso supervisor para cadastrar um novo usuário.
 
 Imagem do passo 4:
 ![image](https://github.com/Gustavohonoras/Sistema_de_ponto_include/assets/108849824/6c1c3879-1060-4932-b945-fee883dbfb63)
 
+Qualquer dúvida só chamar 🚀
