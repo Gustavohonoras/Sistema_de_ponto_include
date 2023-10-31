@@ -36,4 +36,5 @@ execute o 7 se quiser ver o banco de dados
 *Importante:* O banco de dados enviado esta sem usuarios cadastrados, para rodar o sistema, começar por acesso supervisor para cadastrar um novo usuário.
 
 Imagem do passo 4:
-![image](https://github.com/Gustavohonoras/Sistemna_de_ponto_include/assets/108849824/5958ba1a-9fa3-42bc-90e7-5ef7ebe3ff21)
+![image](https://github.com/Gustavohonoras/Sistema_de_ponto_include/assets/108849824/6c1c3879-1060-4932-b945-fee883dbfb63)
+
